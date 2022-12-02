@@ -7,7 +7,7 @@
 #logo{
     width: 215px;
     height: 188px;
-    margin-top: 30vh;
+    margin-top: 10vh;
 }
 
 #title{
@@ -16,7 +16,6 @@ font-style: normal;
 font-weight: 400;
 font-size: 2em;
 line-height: 53%;
-/* identical to box height */
 text-align: center;
 letter-spacing: 0.05em;
 color: #BFA4EB;
@@ -31,6 +30,4 @@ background-position: center;
 background-size:100%;
 height: 53px;
 width: 220px;
-box-shadow: 0px 0px 20px #f0e1f1;
-border-radius: 7px;
 }
