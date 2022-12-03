@@ -32,8 +32,8 @@ color: rgba(241, 236, 244, 0.9);
 height: 70vh ;
 width: 100vw;
 }
-#logout{
-width: 50px;
+#log-out{
+width: 42px;
 height: 35px;
 border-radius: 30px;
 position: absolute;

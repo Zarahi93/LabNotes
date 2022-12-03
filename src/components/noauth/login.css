@@ -21,13 +21,7 @@ letter-spacing: 0.05em;
 color: #BFA4EB;
 }
 
-.button{
-margin-top: 30vh;
+.google-button{
+margin-top: 25vh;
 margin-bottom: 10vh;
-background-image: url('./btn_google_signin_light_normal_web@2x.png');
-background-repeat: no-repeat;
-background-position: center;
-background-size:100%;
-height: 53px;
-width: 220px;
 }

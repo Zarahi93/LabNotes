@@ -1,7 +1,19 @@
+/* eslint linebreak-style: ["error", "windows"] */
+//import { async } from '@firebase/util';
+import { UserAuth } from '../../context/AuthContext';
 import './main.css';
 import logo from './img/notasc.png';
 
 export default function Main() {
+  const { user, logOut } = UserAuth();
+
+  const handleSingOut = async () =>{
+    try{
+      await logOut()
+    } catch (error){
+      console.log(error);
+    }
+  }
   return (
 <main id="mainpage">
     <header id="yournotes">
@@ -12,7 +24,7 @@ export default function Main() {
 
     </section>
     <footer id='mainfooter'>
-        <button id='logout'></button>
+        <button onClick={handleSingOut} id='log-out'></button>
     </footer>
 </main>
   );
