@@ -3,18 +3,16 @@ import GoogleButton from 'react-google-button';
 import { UserAuth } from '../../context/AuthContext';
 import logo from './notasc.png';
 import './login.css';
-import { async } from '@firebase/util';
 
 export default function Login() {
-
-  const {googleSingIn} = UserAuth();
+  const { googleSingIn } = UserAuth();
   const handleGooleSingIn = async () => {
     try {
-await googleSingIn()
-    } catch(error) { 
-console.log(error);
+      await googleSingIn();
+    } catch (error) {
+      console.log(error);
     }
-  }
+  };
 
   return (
     <section className='login'>
