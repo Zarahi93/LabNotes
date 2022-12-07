@@ -55,9 +55,9 @@ width: 100vw;
 }
 
 #log-out{
-width: 42px;
-height: 35px;
-border-radius: 30px;
+width: 50px;
+height: 45px;
+border-radius: 100px;
 position: absolute;
 left: 3vw;
 margin-bottom: 2%;

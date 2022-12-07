@@ -1,10 +1,12 @@
 /* eslint linebreak-style: ["error", "windows"] */
+import { useNavigate } from 'react-router-dom';
 import { UserAuth } from '../../context/AuthContext';
 import './main.css';
 import logo from './img/notasc.png';
 
 export default function Main() {
   const { logOut } = UserAuth();
+  const navigate = useNavigate();
 
   const handleSingOut = async () => {
     try {
@@ -13,6 +15,10 @@ export default function Main() {
       console.log(error);
     }
   };
+
+  const goToNewNote = () => {
+    navigate('/notes');
+  };
   return (
 <main id="mainpage">
     <header id="yournotes">
@@ -20,9 +26,12 @@ export default function Main() {
         <h1 id="maintitle">Your notes</h1>
     </header>
     <section id='mainsection'>
-<article id='new-notes'>
+<article id='new-notes' onClick={goToNewNote}>
   <p id='new-note-p'>Write a new note</p>
 </article>
+<section id='notes-section'>
+
+</section>
     </section>
     <footer id='mainfooter'>
         <button onClick={handleSingOut} id='log-out'></button>
