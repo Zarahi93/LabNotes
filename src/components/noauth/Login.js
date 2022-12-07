@@ -1,11 +1,14 @@
 /* eslint linebreak-style: ["error", "windows"] */
+import { useEffect } from 'react';
+import { useNavigate } from 'react-router-dom';
 import GoogleButton from 'react-google-button';
 import { UserAuth } from '../../context/AuthContext';
 import logo from './notasc.png';
 import './login.css';
 
 export default function Login() {
-  const { googleSingIn } = UserAuth();
+  const { googleSingIn, user } = UserAuth();
+  const navigate = useNavigate();
   const handleGooleSingIn = async () => {
     try {
       await googleSingIn();
@@ -13,6 +16,12 @@ export default function Login() {
       console.log(error);
     }
   };
+
+  useEffect(() => {
+    if (user != null) {
+      navigate('/main');
+    }
+  }, [user]);
 
   return (
     <section className='login'>
