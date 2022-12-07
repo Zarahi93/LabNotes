@@ -5,12 +5,14 @@ import Login from './components/noauth/Login';
 import Main from './components/auth/Main';
 import NewNotes from './components/auth/NewNote';
 import Protected from './components/auth/Protected';
+import Loading from './components/noauth/Loading';
 
 function App() {
   return (
     <AuthContextProvider>
       <Routes>
         <Route path='/' element={<Login />} />
+        <Route path='/loading' element={<Loading />} />
         <Route path='/main' element={<Protected> <Main /> </Protected>} />
         <Route path='/notes' element={<Protected> <NewNotes /> </Protected>} />
       </Routes>
