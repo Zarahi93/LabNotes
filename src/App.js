@@ -2,10 +2,10 @@
 import { Routes, Route } from 'react-router-dom';
 import { AuthContextProvider } from './context/AuthContext';
 import Login from './components/noauth/Login';
+import Loading from './components/noauth/Loading';
 import Main from './components/auth/Main';
 import NewNotes from './components/auth/NewNote';
 import Protected from './components/auth/Protected';
-import Loading from './components/noauth/Loading';
 
 function App() {
   return (
