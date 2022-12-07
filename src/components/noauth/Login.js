@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import GoogleButton from 'react-google-button';
 import { UserAuth } from '../../context/AuthContext';
-import logo from './notasc.png';
+import logo from '../img/notasc.png';
 import './login.css';
 
 export default function Login() {

@@ -2,7 +2,7 @@
 import { useNavigate } from 'react-router-dom';
 import { UserAuth } from '../../context/AuthContext';
 import './main.css';
-import logo from './img/notasc.png';
+import logo from '../img/notasc.png';
 
 export default function Main() {
   const { logOut } = UserAuth();
