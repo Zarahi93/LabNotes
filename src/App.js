@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+/* eslint linebreak-style: ["error", "windows"] */
+import { Routes, Route } from 'react-router-dom';
+import { AuthContextProvider } from './context/AuthContext';
+import Login from './components/noauth/Login';
+import Loading from './components/noauth/Loading';
+import Main from './components/auth/Main';
+import NewNotes from './components/auth/NewNote';
+import Protected from './components/auth/Protected';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AuthContextProvider>
+      <Routes>
+        <Route path='/' element={<Login />} />
+        <Route path='/loading' element={<Loading />} />
+        <Route path='/main' element={<Protected> <Main /> </Protected>} />
+        <Route path='/notes' element={<Protected> <NewNotes /> </Protected>} />
+      </Routes>
+    </AuthContextProvider>
+
   );
 }
 

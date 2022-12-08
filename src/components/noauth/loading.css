@@ -1,0 +1,26 @@
+#load{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#loading{
+margin-top: 40vh;
+margin-bottom: 2vh;
+font-family: 'Hubballi';
+font-style:oblique;
+font-weight: 600;
+font-size: 2.5em;
+line-height: 53%;
+text-align: center;
+letter-spacing: 0.05em;
+color: #BFA4EB;
+}
+
+#box{
+    width: 30vw;
+    height: 4vh;
+    background-color: #8e74a2;
+    animation-name: loading;
+}
+

@@ -1,0 +1,27 @@
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#logo{
+    width: 215px;
+    height: 188px;
+    margin-top: 10vh;
+}
+
+#title{
+font-family: 'Hubballi';
+font-style: normal;
+font-weight: 400;
+font-size: 2em;
+line-height: 53%;
+text-align: center;
+letter-spacing: 0.05em;
+color: #BFA4EB;
+}
+
+.google-button{
+margin-top: 25vh;
+margin-bottom: 10vh;
+}
