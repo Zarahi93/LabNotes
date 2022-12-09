@@ -6,8 +6,15 @@ width: 100vw;
 height: 100vh;
 }
 
+#close{
+    margin-top: 1vh;
+    margin-left: 1vw;
+    width: 35px;
+    height: 35px; 
+}
+
 #note-title{
-    margin-top: 8vh;
+    margin-top: 1vh;
     min-width: 80vw;
     min-height: 6vh;
     font-size: 29px;

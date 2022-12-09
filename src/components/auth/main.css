@@ -32,7 +32,7 @@ color: rgba(241, 236, 244, 0.9);
 display: flex;
 flex-direction: column;
 align-items: center;
-height: 70vh ;
+height: 80vh ;
 width: 100vw;
 }
 
@@ -54,13 +54,22 @@ width: 100vw;
     color: black;
 }
 
+#notes-section{ 
+width: 100vw;
+height: 100vh;
+display: grid;
+grid-template-columns: 33% 33% 33%;
+grid-template-rows: 50% 50%;
+}
+
 #log-out{
 width: 50px;
 height: 45px;
 border-radius: 100px;
 position: absolute;
 left: 3vw;
-margin-bottom: 2%;
+margin-top: 1vh;
+margin-bottom: 1vh;
 background-image: url('../img/cerrar-sesion11.png');
 background-repeat: no-repeat;
 background-position: center;

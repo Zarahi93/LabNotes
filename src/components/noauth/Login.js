@@ -8,6 +8,7 @@ import './login.css';
 
 export default function Login() {
   const { googleSingIn, user } = UserAuth();
+  // console.log(user);
   const navigate = useNavigate();
   const handleGooleSingIn = async () => {
     try {
@@ -18,11 +19,10 @@ export default function Login() {
   };
 
   useEffect(() => {
-    if (user) {
+    if (user != null) {
       navigate('/main');
     }
   }, [user]);
-
   return (
     <section className='login'>
       <img id='logo' src={logo} alt='Logo' />
