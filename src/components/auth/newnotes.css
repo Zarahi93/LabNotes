@@ -13,16 +13,16 @@ height: 100vh;
     height: 35px; 
 }
 
-#note-title{
+#new-note-title{
     margin-top: 1vh;
-    min-width: 80vw;
+    width: 80vw;
     min-height: 6vh;
     font-size: 29px;
 }
 
 #your-note{
     margin-top: 3vh;
-    min-width: 80vw;
+    width: 80vw;
     min-height: 30vh;
     font-size: 19px;
 }

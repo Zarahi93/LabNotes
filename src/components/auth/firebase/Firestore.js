@@ -12,7 +12,7 @@ export const addNote = async (noteObject) => {
 
 export const getNote = async () => {
   await getDoc(collection(db, 'Notes'));
-  console.log('data');
+  console.log(db.data);
 };
 
 // export const addTitle = async (e) => {

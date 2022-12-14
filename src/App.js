@@ -5,6 +5,7 @@ import Login from './components/noauth/Login';
 import Loading from './components/noauth/Loading';
 import Main from './components/auth/Main';
 import NewNotes from './components/auth/NewNote';
+import Note from './components/auth/NoteItem';
 import Protected from './components/auth/Protected';
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Route path='/loading' element={<Loading />} />
         <Route path='/main' element={<Protected> <Main /> </Protected>} />
         <Route path='/notes' element={<Protected> <NewNotes /> </Protected>} />
+        <Route path='/note' element={<Protected> <Note /> </Protected>} />
       </Routes>
     </AuthContextProvider>
 

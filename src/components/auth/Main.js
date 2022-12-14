@@ -20,9 +20,9 @@ export default function Main() {
   const goToNewNote = () => {
     navigate('/notes');
   };
-  // useEffect(() => {
-  //   getNote();
-  // }, []);
+  useEffect(() => {
+    getNote();
+  }, []);
   return (
 <main id="mainpage">
     <header id="yournotes">

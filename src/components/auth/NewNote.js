@@ -28,7 +28,7 @@ export default function NewNotes() {
         <section id='new-note-page'>
           <img id='close' src={close} alt='Close new note' onClick={goToMainPage}/>
           <form id='new-note' onSubmit={handleSubmit}>
-            <input type='text' name='title' placeholder='Title' id='note-title'
+            <input type='text' name='title' placeholder='Title' id='new-note-title'
             onChange={handleNoteChange} className='form-control'/>
             <textarea name="note" id='your-note' placeholder='Write your new note here!'
             onChange={handleNoteChange} className='form-control'/>
