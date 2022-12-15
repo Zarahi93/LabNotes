@@ -38,9 +38,9 @@ width: 100vw;
 
 #new-notes{
     margin-top: 3vh;
-    margin-bottom: 4vh;
+    margin-bottom: 3vh;
     width: 70vw;
-    height: 16vh;
+    height: 10vh;
     background-color: #8e74a2;
     border: thick double black;
 }
@@ -56,10 +56,7 @@ width: 100vw;
 
 #notes-section{ 
 width: 100vw;
-height: 100vh;
-display: grid;
-grid-template-columns: 33% 33% 33%;
-grid-template-rows: 50% 50%;
+height: 90vh;
 }
 
 #log-out{

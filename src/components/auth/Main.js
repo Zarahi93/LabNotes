@@ -2,7 +2,7 @@
 import React, { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { UserAuth } from '../../context/AuthContext';
-import { getNote } from './firebase/Firestore';
+// import { getNote } from './firebase/Firestore';
 import './main.css';
 import logo from '../img/notasc.png';
 
@@ -20,9 +20,9 @@ export default function Main() {
   const goToNewNote = () => {
     navigate('/notes');
   };
-  useEffect(() => {
-    getNote();
-  }, []);
+  // useEffect(() => {
+  //   getNote();
+  // }, []);
   return (
 <main id="mainpage">
     <header id="yournotes">
