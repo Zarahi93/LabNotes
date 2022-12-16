@@ -18,7 +18,7 @@ export default function Main() {
     }
   };
   const goToNewNote = () => {
-    navigate('/notes');
+    navigate('/newnote');
   };
   // useEffect(() => {
   //   getNote();

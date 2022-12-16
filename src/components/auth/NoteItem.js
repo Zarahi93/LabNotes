@@ -4,15 +4,17 @@ import './noteitem.css';
 
 export default function NoteItem() {
   return (
-<main id="main-note-item">
-<section id="note-item">
-    <article id="note-title">Title note</article>
-    <article id="note-body">Note body</article>
-    <article id="note-menu">
+<section className='note-item'>
+    <article id='note-title'>
+      <h3 id='text-title'>Note title</h3>
+    </article>
+    <article id='note-body'>
+      <p id='text-note'> Text of the note</p>
+    </article>
+    <article id='note-menu'>
     <img id='img-menu' src={menu} alt='Notes menu' />
     </article>
 
 </section>
-</main>
   );
 }
