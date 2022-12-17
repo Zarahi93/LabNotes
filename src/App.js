@@ -14,11 +14,12 @@ function App() {
     <AuthContextProvider>
       <Routes>
         <Route path='/' element={<Login />} />
-        <Route path='/loading' element={<Loading />} />
-        <Route path='/main' element={<Protected> <Main /> </Protected>} />
-        <Route path='/newnote' element={<Protected> <NewNotes /> </Protected>} />
-        <Route path='/note' element={<Protected> <Note /> </Protected>} />
-        <Route path='/notes' element={<Protected> <Notes /> </Protected>} />
+        <Route path='loading' element={<Loading />} />
+        <Route path='main' element={<Protected> <Main /> </Protected>}>
+        <Route path='note' element={<Protected> <Note /> </Protected>} />
+        <Route path='notes' element={<Protected> <Notes /> </Protected>} />
+        </Route>
+        <Route path='newnote' element={<Protected> <NewNotes /> </Protected>} />
       </Routes>
     </AuthContextProvider>
 

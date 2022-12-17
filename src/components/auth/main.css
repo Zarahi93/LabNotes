@@ -1,17 +1,17 @@
-#mainpage{
+#main-page{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#yournotes{
+#header-notes{
     display: flex;
     justify-content: center;
     background-color: #604873;
     width:100vw;
     min-height: 8vh;
 }
-#mainlogo{
+#main-logo{
 width: 56px;
 height: 60px;
 margin-top: 2%;
@@ -19,7 +19,7 @@ margin-bottom: 1%;
 margin-right: 3%;
 }
 
-#maintitle{
+#main-title{
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 550;
@@ -28,7 +28,7 @@ line-height: 54px;
 color: rgba(241, 236, 244, 0.9);
 }
 
-#mainsection{
+#main-section{
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -40,7 +40,9 @@ width: 100vw;
     margin-top: 3vh;
     margin-bottom: 3vh;
     width: 70vw;
+    min-width: 200px;
     height: 10vh;
+    min-height: 70px;
     background-color: #8e74a2;
     border: thick double black;
 }

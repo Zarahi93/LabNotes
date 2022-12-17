@@ -13,7 +13,7 @@ export default function NewNotes() {
   const [values, setValues] = useState(initialState);
   const navigate = useNavigate();
   const goToMainPage = () => {
-    navigate('/main');
+    navigate('/main/notes');
   };
   const handleNoteChange = (e) => {
     const { name, value } = e.target;

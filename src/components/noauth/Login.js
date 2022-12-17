@@ -20,7 +20,7 @@ export default function Login() {
 
   useEffect(() => {
     if (user != null) {
-      navigate('/main');
+      navigate('/main/notes');
     }
   }, [user]);
   return (
