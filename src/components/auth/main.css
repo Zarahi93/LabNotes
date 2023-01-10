@@ -2,14 +2,16 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
-#header-notes{
+#header-main{
     display: flex;
     justify-content: center;
     background-color: #604873;
     width:100vw;
-    min-height: 8vh;
+    min-height: auto;
 }
 #main-logo{
 width: 56px;
@@ -32,13 +34,12 @@ color: rgba(241, 236, 244, 0.9);
 display: flex;
 flex-direction: column;
 align-items: center;
-height: 80vh ;
+height: auto;
 width: 100vw;
 }
 
 #new-notes{
-    margin-top: 3vh;
-    margin-bottom: 3vh;
+    margin-top: 4vh;
     width: 70vw;
     min-width: 200px;
     height: 10vh;
@@ -58,7 +59,17 @@ width: 100vw;
 
 #notes-section{ 
 width: 100vw;
-height: 90vh;
+height: auto;
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+}
+
+#main-footer{
+    min-height: 10vh;
+    width: 100vw;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
 }
 
 #log-out{
@@ -67,8 +78,6 @@ height: 45px;
 border-radius: 100px;
 position: absolute;
 left: 3vw;
-margin-top: 1vh;
-margin-bottom: 1vh;
 background-image: url('../img/cerrar-sesion11.png');
 background-repeat: no-repeat;
 background-position: center;

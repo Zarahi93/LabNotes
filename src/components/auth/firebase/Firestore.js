@@ -1,12 +1,12 @@
 /* eslint linebreak-style: ["error", "windows"] */
 import { async } from '@firebase/util';
 import {
-  collection, addDoc, getDoc,
+  getFirestore, collection, addDoc, getDocs, doc, deleteDoc, getDoc, setDoc,
 } from 'firebase/firestore';
 import { db } from './firebase-config';
 
-export const addNote = async (noteObject) => {
-  await addDoc(collection(db, 'Notes'), noteObject);
+export const addNote = async (e) => {
+  await addDoc(collection(db, 'Notes'), e);
   console.log('New note');
 };
 

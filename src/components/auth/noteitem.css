@@ -9,14 +9,13 @@ background-color: #21162F;
 
 #note-title{
 width: 30vw;
-height: 14vh;
+min-height: 9vh;
 }
 #text-title{
-    font-family: 'Hubballi';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 400;
-    font-size: 2em;
-    line-height: 53%;
+    font-size: 1.8em;
+    line-height: 43%;
     text-align: center;
     letter-spacing: 0.05em;
     color: #BFA4EB;
@@ -24,17 +23,17 @@ height: 14vh;
 
 #note-body{
 width: 30vw;
-height: 60vh;
+min-height: 30vh;
 }
 
 #text-note{
     margin: 3vh 3vw;
-    font-family: 'Francois One';
+    font-family: 'Montserrat';
     font-style: normal;
-    font-size: 30px;
-    line-height: 43px;
+    font-size: 24px;
     text-align: justify;
     text-justify: inter-word;
+    word-break: break-word;
     letter-spacing: 0.05em;
     color: rgba(231, 221, 248, 0.94);
 }

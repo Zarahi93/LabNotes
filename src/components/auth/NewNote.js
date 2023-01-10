@@ -10,11 +10,15 @@ export default function NewNotes() {
     title: '',
     note: '',
   };
+  // state variables
   const [values, setValues] = useState(initialState);
+
+  // Function to go back to the main page
   const navigate = useNavigate();
   const goToMainPage = () => {
     navigate('/main/notes');
   };
+  // Functions to save the title and the body of the note
   const handleNoteChange = (e) => {
     const { name, value } = e.target;
     setValues({ ...values, [name]: value });

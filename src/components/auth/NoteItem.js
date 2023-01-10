@@ -9,7 +9,7 @@ export default function NoteItem() {
       <h3 id='text-title'>Note title</h3>
     </article>
     <article id='note-body'>
-      <p id='text-note'> Text of the note</p>
+      <p id='text-note'> Text of the noteqwwertyuiop lkjhgfdsazxdcvbnm,.. poinubytr ewertvybunimo, iubyvtrcertyuimnbyvtc rerctvbynu miiuyttyuimo,.</p>
     </article>
     <article id='note-menu'>
     <img id='img-menu' src={menu} alt='Notes menu' />

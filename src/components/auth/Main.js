@@ -25,7 +25,7 @@ export default function Main() {
   // }, []);
   return (
 <main id="main-page">
-    <header id="header-notes">
+    <header id="header-main">
     <img src={logo} id='main-logo'/>
         <h1 id="main-title">Your notes</h1>
     </header>
