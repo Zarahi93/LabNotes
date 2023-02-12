@@ -1,5 +1,5 @@
 /* eslint linebreak-style: ["error", "windows"] */
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import NoteItem from './NoteItem';
 import './noteslist.css';
 
